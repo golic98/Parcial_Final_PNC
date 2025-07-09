@@ -3,6 +3,7 @@ package com.uca.parcialfinalncapas.configuration;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
@@ -12,6 +13,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.function.Function;
 
+@Component
 public class JwtUtils {
     private SecretKey key;
     private static final long EXPIRATION_TIME = 86400000L;

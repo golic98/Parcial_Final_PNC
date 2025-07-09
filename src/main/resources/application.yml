@@ -1,6 +1,7 @@
 spring:
+  port: 8080
   datasource:
-    url: jdbc:postgresql://localhost:5432/supportdb
+    url: jdbc:postgresql://localhost:5432/Parcial3Pnc
     username: postgres
     password: root
   jpa:

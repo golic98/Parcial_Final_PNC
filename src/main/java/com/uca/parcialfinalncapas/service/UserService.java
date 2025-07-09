@@ -1,9 +1,14 @@
 package com.uca.parcialfinalncapas.service;
 
+import com.uca.parcialfinalncapas.configuration.JwtUtils;
 import com.uca.parcialfinalncapas.dto.request.UserCreateRequest;
 import com.uca.parcialfinalncapas.dto.request.UserUpdateRequest;
 import com.uca.parcialfinalncapas.dto.response.UserResponse;
 import com.uca.parcialfinalncapas.entities.User;
+import com.uca.parcialfinalncapas.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 
